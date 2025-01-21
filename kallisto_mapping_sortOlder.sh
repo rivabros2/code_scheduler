@@ -25,7 +25,8 @@ mkdir -p "$KALLISTO_OUTPUT_DIR"
 for fastq1 in $(ls -1t --reverse "$FASTQ_DIR"/*_1.fastq); do
   fastq2="${fastq1/_1.fastq/_2.fastq}"
   base_name=$(basename "$fastq1" _1.fastq)
-
+  
+### Cuando el file contiene el prefijo SAM, significa que se bajo completamente y fue re-nombrado, asegura solo usar archivos completos
   if [[ "$fastq1" == *SAM* ]] && [[ -f "$fastq2" ]]; then
     echo "Mapping paired-end files for $base_name"
     /home/mrivarola/bin/kallisto quant -i "$KALLISTO_INDEX" --threads 50 \
