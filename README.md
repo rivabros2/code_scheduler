@@ -36,3 +36,6 @@ downloadFastq_part03.sh
 downloadFastq_part04.sh
 
 
+### Script to run modeling (script4) needs adjustments
+model_4.py
+
