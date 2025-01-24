@@ -45,6 +45,7 @@ while IFS=',' read -r run_name sample_name; do
     fi
   fi
 
+  ### Rename makes sure file has completly downloaded, only renames and adds prefix SAM to every complete file:
   # Rename files for clarity
   fastq1="$FASTQ_DIR/${run_name}_1.fastq"
   fastq2="$FASTQ_DIR/${run_name}_2.fastq"
