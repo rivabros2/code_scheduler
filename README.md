@@ -1,6 +1,6 @@
 # code_scheduler
 
-### Scripts con scheduler:
+### Scripts con scheduler (one repeats and loops checking jobs , other mapping scripts send jobs when needed automaticaly):
 
 kallisto_mapping_sortOlder.sh
 
@@ -9,7 +9,7 @@ repeat_loop_kallisto_mappingOlder_v2.sh
 
 
 
-### Listas SRR ids y extra bash code:
+### List of SRR ids:
 
 2167part00.txt
 
@@ -22,7 +22,7 @@ repeat_loop_kallisto_mappingOlder_v2.sh
 2345part_04.txt
 
 
-### code in screen to download:
+### bash code to run  in "screen" to download in parralele, does 3 attempts per sun:
 
 
 downloadFastq_part00.sh
